@@ -1,6 +1,6 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1764988627522,
-  "repoUrl": "https://github.com/textlint/textlint",
+  "lastUpdate": 1765035653478,
+  "repoUrl": "https://github.com/thompson-tomo/textlint",
   "entries": {
     "Benchmark": [
       {
@@ -92987,6 +92987,48 @@ window.BENCHMARK_DATA = {
             "name": "npm run bench:jtf-style",
             "value": 0.6685154003800001,
             "range": "± 0.02568864599999998",
+            "unit": "seconds"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "thompson.tomo@outlook.com",
+            "name": "James Thompson",
+            "username": "thompson-tomo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "fd791aedaa37cefe3013b986c4787231d7ffd700",
+          "message": "build fix",
+          "timestamp": "2025-12-07T02:21:22+11:00",
+          "tree_id": "60a4863fe1e9451a3e689306d35375090ab61e70",
+          "url": "https://github.com/thompson-tomo/textlint/commit/fd791aedaa37cefe3013b986c4787231d7ffd700"
+        },
+        "date": 1765035647029,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "npm run bench:self",
+            "value": 0.23567700402000002,
+            "range": "± 0.15767859899999997",
+            "unit": "seconds"
+          },
+          {
+            "name": "npm run bench:technical-writing",
+            "value": 1.81675340502,
+            "range": "± 0.009630903000000135",
+            "unit": "seconds"
+          },
+          {
+            "name": "npm run bench:jtf-style",
+            "value": 0.68433969842,
+            "range": "± 0.012699573999999991",
             "unit": "seconds"
           }
         ]
