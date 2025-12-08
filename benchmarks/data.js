@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1765144743822,
+  "lastUpdate": 1765187659989,
   "repoUrl": "https://github.com/thompson-tomo/textlint",
   "entries": {
     "Benchmark": [
@@ -93239,6 +93239,48 @@ window.BENCHMARK_DATA = {
             "name": "npm run bench:jtf-style",
             "value": 0.6812168419400001,
             "range": "± 0.010354569999999952",
+            "unit": "seconds"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "azu@users.noreply.github.com",
+            "name": "azu",
+            "username": "azu"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "364d9a3eb83bdbbef56ad726d07271aa33e216fb",
+          "message": "docs: add GitHub formatter documentation (#1857)\n\n- Add GitHub formatter section to formatter.md #1843 \n- Add GitHub Actions integration examples using GitHub formatter\n- Use npm exec instead of npx for better CI performance\n- Provide examples for both full and changed file checking\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\n---------\n\nCo-authored-by: Claude Opus 4.5 <noreply@anthropic.com>\nCo-authored-by: James Thompson <thompson.tomo@outlook.com>",
+          "timestamp": "2025-12-08T17:22:07+09:00",
+          "tree_id": "c3bb1517d2baccae99a7e56a8a981f6656c55420",
+          "url": "https://github.com/thompson-tomo/textlint/commit/364d9a3eb83bdbbef56ad726d07271aa33e216fb"
+        },
+        "date": 1765187652531,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "npm run bench:self",
+            "value": 0.23979414136000005,
+            "range": "± 0.203647557",
+            "unit": "seconds"
+          },
+          {
+            "name": "npm run bench:technical-writing",
+            "value": 1.77586100636,
+            "range": "± 0.025312334999999964",
+            "unit": "seconds"
+          },
+          {
+            "name": "npm run bench:jtf-style",
+            "value": 0.6615860039600001,
+            "range": "± 0.01658261800000005",
             "unit": "seconds"
           }
         ]
