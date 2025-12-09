@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1765230870661,
+  "lastUpdate": 1765286585937,
   "repoUrl": "https://github.com/thompson-tomo/textlint",
   "entries": {
     "Benchmark": [
@@ -93323,6 +93323,48 @@ window.BENCHMARK_DATA = {
             "name": "npm run bench:jtf-style",
             "value": 0.66893358084,
             "range": "± 0.003650857999999979",
+            "unit": "seconds"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "thompson.tomo@outlook.com",
+            "name": "James Thompson",
+            "username": "thompson-tomo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2e25e87f90b0c9476413e0c81b9b98e5fb00d2bb",
+          "message": "Update CLI documentation for lint error handling\n\nClarify behavior of --dry-run option in lint error handling.",
+          "timestamp": "2025-12-10T00:21:12+11:00",
+          "tree_id": "19b12401898038c27257ccf400e2ae6d41cb7ec9",
+          "url": "https://github.com/thompson-tomo/textlint/commit/2e25e87f90b0c9476413e0c81b9b98e5fb00d2bb"
+        },
+        "date": 1765286578375,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "npm run bench:self",
+            "value": 0.25129771356,
+            "range": "± 0.25735653699999994",
+            "unit": "seconds"
+          },
+          {
+            "name": "npm run bench:technical-writing",
+            "value": 1.80044442336,
+            "range": "± 0.031352251000000164",
+            "unit": "seconds"
+          },
+          {
+            "name": "npm run bench:jtf-style",
+            "value": 0.67268365016,
+            "range": "± 0.018554508999999997",
             "unit": "seconds"
           }
         ]
