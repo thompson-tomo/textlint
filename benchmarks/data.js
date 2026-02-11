@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1770664567524,
+  "lastUpdate": 1770769834525,
   "repoUrl": "https://github.com/thompson-tomo/textlint",
   "entries": {
     "Benchmark": [
@@ -95423,6 +95423,48 @@ window.BENCHMARK_DATA = {
             "name": "npm run bench:jtf-style",
             "value": 0.66356544464,
             "range": "± 0.03126755999999997",
+            "unit": "seconds"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f2c6daf50118b84e21899c27c5905c8820bdc1c6",
+          "message": "chore(deps): update pnpm to v10.29.1 (#1920)\n\nThis PR contains the following updates:\n\n| Package | Change |\n[Age](https://docs.renovatebot.com/merge-confidence/) |\n[Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [pnpm](https://pnpm.io)\n([source](https://redirect.github.com/pnpm/pnpm/tree/HEAD/pnpm)) |\n[`10.28.2+sha512.41872f037ad22f7348e3b1debbaf7e867cfd448f2726d9cf74c08f19507c31d2c8e7a11525b983febc2df640b5438dee6023ebb1f84ed43cc2d654d2bc326264`\n→ `10.29.1`](https://renovatebot.com/diffs/npm/pnpm/10.28.2/10.29.1) |\n![age](https://developer.mend.io/api/mc/badges/age/npm/pnpm/10.29.1?slim=true)\n|\n![confidence](https://developer.mend.io/api/mc/badges/confidence/npm/pnpm/10.28.2/10.29.1?slim=true)\n|\n\n---\n\n### Release Notes\n\n<details>\n<summary>pnpm/pnpm (pnpm)</summary>\n\n###\n[`v10.29.1`](https://redirect.github.com/pnpm/pnpm/releases/tag/v10.29.1):\npnpm 10.29.1\n\n[Compare\nSource](https://redirect.github.com/pnpm/pnpm/compare/v10.28.2...v10.29.1)\n\n#### Minor Changes\n\n- The `pnpm dlx` / `pnpx` command now supports the `catalog:` protocol.\nExample: `pnpm dlx shx@catalog:`.\n- Support configuring `auditLevel` in the `pnpm-workspace.yaml` file\n[#&#8203;10540](https://redirect.github.com/pnpm/pnpm/issues/10540).\n- Support bare `workspace:` protocol without version specifier. It is\nnow treated as `workspace:*` and resolves to the concrete version during\npublish\n[#&#8203;10436](https://redirect.github.com/pnpm/pnpm/pull/10436).\n\n#### Patch Changes\n\n- Fixed `pnpm list --json` returning incorrect paths when using global\nvirtual store\n[#&#8203;10187](https://redirect.github.com/pnpm/pnpm/issues/10187).\n\n- Fix `pnpm store path` and `pnpm store status` using workspace root for\npath resolution when `storeDir` is relative\n[#&#8203;10290](https://redirect.github.com/pnpm/pnpm/issues/10290).\n\n- Fixed `pnpm run -r` failing with \"No projects matched the filters\"\nwhen an empty `pnpm-workspace.yaml` exists\n[#&#8203;10497](https://redirect.github.com/pnpm/pnpm/issues/10497).\n\n- Fixed a bug where `catalogMode: strict` would write the literal string\n`\"catalog:\"` to `pnpm-workspace.yaml` instead of the resolved version\nspecifier when re-adding an existing catalog dependency\n[#&#8203;10176](https://redirect.github.com/pnpm/pnpm/issues/10176).\n\n- Fixed the documentation URL shown in `pnpm completion --help` to point\nto the correct page at <https://pnpm.io/completion>\n[#&#8203;10281](https://redirect.github.com/pnpm/pnpm/issues/10281).\n\n- Skip local `file:` protocol dependencies during `pnpm fetch`. This\nfixes an issue where `pnpm fetch` would fail in Docker builds when local\ndirectory dependencies were not available\n[#&#8203;10460](https://redirect.github.com/pnpm/pnpm/issues/10460).\n\n- Fixed `pnpm audit --json` to respect the `--audit-level` setting for\nboth exit code and output filtering\n[#&#8203;10540](https://redirect.github.com/pnpm/pnpm/issues/10540).\n\n- update tar to version 7.5.7 to fix security issue\n\nUpdating the version of dependency tar to 7.5.7 because the previous one\nhave a security vulnerability reported here: <a\nhref=\"https://redirect.github.com/advisories/GHSA-34x7-hfp2-rc4v\">CVE-2026-24842</a>\n\n- Fix `pnpm audit --fix` replacing reference overrides (e.g. `$foo`)\nwith concrete versions\n[#&#8203;10325](https://redirect.github.com/pnpm/pnpm/issues/10325).\n\n- Fix `shamefullyHoist` set via `updateConfig` in `.pnpmfile.cjs` not\nbeing converted to `publicHoistPattern`\n[#&#8203;10271](https://redirect.github.com/pnpm/pnpm/issues/10271).\n\n- `pnpm help` should correctly report if the currently running pnpm CLI\nis bundled with Node.js\n[#&#8203;10561](https://redirect.github.com/pnpm/pnpm/issues/10561).\n\n- Add a warning when the current directory contains the PATH delimiter\ncharacter. On macOS, folder names containing forward slashes (/) appear\nas colons (:) at the Unix layer. Since colons are PATH separators in\nPOSIX systems, this breaks PATH injection for `node_modules/.bin`,\ncausing binaries to not be found when running commands like `pnpm exec`\n[#&#8203;10457](https://redirect.github.com/pnpm/pnpm/issues/10457).\n\n#### Platinum Sponsors\n\n<table>\n  <tbody>\n    <tr>\n      <td align=\"center\" valign=\"middle\">\n<a href=\"https://bit.dev/?utm_source=pnpm&utm_medium=release_notes\"\ntarget=\"_blank\"><img src=\"https://pnpm.io/img/users/bit.svg\" width=\"80\"\nalt=\"Bit\"></a>\n      </td>\n    </tr>\n  </tbody>\n</table>\n\n#### Gold Sponsors\n\n<table>\n  <tbody>\n    <tr>\n      <td align=\"center\" valign=\"middle\">\n<a href=\"https://discord.com/?utm_source=pnpm&utm_medium=release_notes\"\ntarget=\"_blank\">\n          <picture>\n<source media=\"(prefers-color-scheme: light)\"\nsrcset=\"https://pnpm.io/img/users/discord.svg\" />\n<source media=\"(prefers-color-scheme: dark)\"\nsrcset=\"https://pnpm.io/img/users/discord_light.svg\" />\n<img src=\"https://pnpm.io/img/users/discord.svg\" width=\"220\"\nalt=\"Discord\" />\n          </picture>\n        </a>\n      </td>\n      <td align=\"center\" valign=\"middle\">\n<a\nhref=\"https://coderabbit.ai/?utm_source=pnpm&utm_medium=release_notes\"\ntarget=\"_blank\">\n          <picture>\n<source media=\"(prefers-color-scheme: light)\"\nsrcset=\"https://pnpm.io/img/users/coderabbit.svg\" />\n<source media=\"(prefers-color-scheme: dark)\"\nsrcset=\"https://pnpm.io/img/users/coderabbit_light.svg\" />\n<img src=\"https://pnpm.io/img/users/coderabbit.svg\" width=\"220\"\nalt=\"CodeRabbit\" />\n          </picture>\n        </a>\n      </td>\n      <td align=\"center\" valign=\"middle\">\n<a href=\"https://workleap.com/?utm_source=pnpm&utm_medium=release_notes\"\ntarget=\"_blank\">\n          <picture>\n<source media=\"(prefers-color-scheme: light)\"\nsrcset=\"https://pnpm.io/img/users/workleap.svg\" />\n<source media=\"(prefers-color-scheme: dark)\"\nsrcset=\"https://pnpm.io/img/users/workleap_light.svg\" />\n<img src=\"https://pnpm.io/img/users/workleap.svg\" width=\"190\"\nalt=\"Workleap\" />\n          </picture>\n        </a>\n      </td>\n    </tr>\n    <tr>\n      <td align=\"center\" valign=\"middle\">\n<a\nhref=\"https://stackblitz.com/?utm_source=pnpm&utm_medium=release_notes\"\ntarget=\"_blank\">\n          <picture>\n<source media=\"(prefers-color-scheme: light)\"\nsrcset=\"https://pnpm.io/img/users/stackblitz.svg\" />\n<source media=\"(prefers-color-scheme: dark)\"\nsrcset=\"https://pnpm.io/img/users/stackblitz_light.svg\" />\n<img src=\"https://pnpm.io/img/users/stackblitz.svg\" width=\"190\"\nalt=\"Stackblitz\" />\n          </picture>\n        </a>\n      </td>\n      <td align=\"center\" valign=\"middle\">\n<a href=\"https://vite.dev/?utm_source=pnpm&utm_medium=release_notes\"\ntarget=\"_blank\">\n<img src=\"https://pnpm.io/img/users/vitejs.svg\" width=\"42\" alt=\"Vite\">\n        </a>\n      </td>\n    </tr>\n  </tbody>\n</table>\n\n</details>\n\n---\n\n### Configuration\n\n📅 **Schedule**: Branch creation - At any time (no schedule defined),\nAutomerge - At any time (no schedule defined).\n\n🚦 **Automerge**: Enabled.\n\n♻ **Rebasing**: Whenever PR is behind base branch, or you tick the\nrebase/retry checkbox.\n\n🔕 **Ignore**: Close this PR and you won't be reminded about this update\nagain.\n\n---\n\n- [ ] <!-- rebase-check -->If you want to rebase/retry this PR, check\nthis box\n\n---\n\nThis PR was generated by [Mend Renovate](https://mend.io/renovate/).\nView the [repository job\nlog](https://developer.mend.io/github/textlint/textlint).\n\n<!--renovate-debug:eyJjcmVhdGVkSW5WZXIiOiI0Mi45Ny4wIiwidXBkYXRlZEluVmVyIjoiNDIuOTcuMCIsInRhcmdldEJyYW5jaCI6Im1hc3RlciIsImxhYmVscyI6WyJkZXBlbmRlbmNpZXMiXX0=-->\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "timestamp": "2026-02-10T21:19:47Z",
+          "tree_id": "9f151f02b60f8b59e6e7627474282acdd6804398",
+          "url": "https://github.com/thompson-tomo/textlint/commit/f2c6daf50118b84e21899c27c5905c8820bdc1c6"
+        },
+        "date": 1770769827196,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "npm run bench:self",
+            "value": 0.25225328188,
+            "range": "± 0.23578459300000001",
+            "unit": "seconds"
+          },
+          {
+            "name": "npm run bench:technical-writing",
+            "value": 1.82509134668,
+            "range": "± 0.03598271299999989",
+            "unit": "seconds"
+          },
+          {
+            "name": "npm run bench:jtf-style",
+            "value": 0.6783229968800001,
+            "range": "± 0.02248016399999997",
             "unit": "seconds"
           }
         ]
