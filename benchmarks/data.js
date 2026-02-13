@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1770904347898,
+  "lastUpdate": 1770954852640,
   "repoUrl": "https://github.com/thompson-tomo/textlint",
   "entries": {
     "Benchmark": [
@@ -95591,6 +95591,48 @@ window.BENCHMARK_DATA = {
             "name": "npm run bench:jtf-style",
             "value": 0.6711721033600001,
             "range": "± 0.018989677000000094",
+            "unit": "seconds"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a0e6e8b815bb4f0ea4f3a123b0552705eb263da3",
+          "message": "chore(deps): update eslint to ^8.55.0 (minor) (#1923)\n\nThis PR contains the following updates:\n\n| Package | Change |\n[Age](https://docs.renovatebot.com/merge-confidence/) |\n[Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n|\n[@typescript-eslint/eslint-plugin](https://typescript-eslint.io/packages/eslint-plugin)\n([source](https://redirect.github.com/typescript-eslint/typescript-eslint/tree/HEAD/packages/eslint-plugin))\n| [`^8.54.0` →\n`^8.55.0`](https://renovatebot.com/diffs/npm/@typescript-eslint%2feslint-plugin/8.54.0/8.55.0)\n|\n![age](https://developer.mend.io/api/mc/badges/age/npm/@typescript-eslint%2feslint-plugin/8.55.0?slim=true)\n|\n![confidence](https://developer.mend.io/api/mc/badges/confidence/npm/@typescript-eslint%2feslint-plugin/8.54.0/8.55.0?slim=true)\n|\n|\n[@typescript-eslint/parser](https://typescript-eslint.io/packages/parser)\n([source](https://redirect.github.com/typescript-eslint/typescript-eslint/tree/HEAD/packages/parser))\n| [`^8.54.0` →\n`^8.55.0`](https://renovatebot.com/diffs/npm/@typescript-eslint%2fparser/8.54.0/8.55.0)\n|\n![age](https://developer.mend.io/api/mc/badges/age/npm/@typescript-eslint%2fparser/8.55.0?slim=true)\n|\n![confidence](https://developer.mend.io/api/mc/badges/confidence/npm/@typescript-eslint%2fparser/8.54.0/8.55.0?slim=true)\n|\n\n---\n\n### Release Notes\n\n<details>\n<summary>typescript-eslint/typescript-eslint\n(@&#8203;typescript-eslint/eslint-plugin)</summary>\n\n###\n[`v8.55.0`](https://redirect.github.com/typescript-eslint/typescript-eslint/blob/HEAD/packages/eslint-plugin/CHANGELOG.md#8550-2026-02-09)\n\n[Compare\nSource](https://redirect.github.com/typescript-eslint/typescript-eslint/compare/v8.54.0...v8.55.0)\n\n##### 🚀 Features\n\n- **utils:** deprecate defaultOptions in favor of meta.defaultOptions\n([#&#8203;11992](https://redirect.github.com/typescript-eslint/typescript-eslint/pull/11992))\n\n##### 🩹 Fixes\n\n- **eslint-plugin:** \\[no-useless-default-assignment] reduce param index\nto ts this handling\n([#&#8203;11949](https://redirect.github.com/typescript-eslint/typescript-eslint/pull/11949))\n- **eslint-plugin:** \\[no-useless-default-assignment] report unnecessary\ndefaults in ternary expressions\n([#&#8203;11984](https://redirect.github.com/typescript-eslint/typescript-eslint/pull/11984))\n- **eslint-plugin:** \\[no-useless-default-assignment] require\nstrictNullChecks\n([#&#8203;11966](https://redirect.github.com/typescript-eslint/typescript-eslint/pull/11966),\n[#&#8203;12000](https://redirect.github.com/typescript-eslint/typescript-eslint/pull/12000))\n- **eslint-plugin:** \\[no-unused-vars] remove trailing newline when\nremoving entire import\n([#&#8203;11990](https://redirect.github.com/typescript-eslint/typescript-eslint/pull/11990))\n\n##### ❤️ Thank You\n\n- Christian Rose\n[@&#8203;chrros95](https://redirect.github.com/chrros95)\n- Josh Goldberg\n- Maria Solano\n[@&#8203;MariaSolOs](https://redirect.github.com/MariaSolOs)\n- Minyeong Kim\n[@&#8203;minyeong981](https://redirect.github.com/minyeong981)\n- SungHyun627\n[@&#8203;SungHyun627](https://redirect.github.com/SungHyun627)\n- Yukihiro Hasegawa [@&#8203;y-hsgw](https://redirect.github.com/y-hsgw)\n\nSee [GitHub\nReleases](https://redirect.github.com/typescript-eslint/typescript-eslint/releases/tag/v8.55.0)\nfor more information.\n\nYou can read about our [versioning\nstrategy](https://typescript-eslint.io/users/versioning) and\n[releases](https://typescript-eslint.io/users/releases) on our website.\n\n</details>\n\n<details>\n<summary>typescript-eslint/typescript-eslint\n(@&#8203;typescript-eslint/parser)</summary>\n\n###\n[`v8.55.0`](https://redirect.github.com/typescript-eslint/typescript-eslint/blob/HEAD/packages/parser/CHANGELOG.md#8550-2026-02-09)\n\n[Compare\nSource](https://redirect.github.com/typescript-eslint/typescript-eslint/compare/v8.54.0...v8.55.0)\n\nThis was a version bump only for parser to align it with other projects,\nthere were no code changes.\n\nSee [GitHub\nReleases](https://redirect.github.com/typescript-eslint/typescript-eslint/releases/tag/v8.55.0)\nfor more information.\n\nYou can read about our [versioning\nstrategy](https://typescript-eslint.io/users/versioning) and\n[releases](https://typescript-eslint.io/users/releases) on our website.\n\n</details>\n\n---\n\n### Configuration\n\n📅 **Schedule**: Branch creation - At any time (no schedule defined),\nAutomerge - At any time (no schedule defined).\n\n🚦 **Automerge**: Enabled.\n\n♻ **Rebasing**: Whenever PR is behind base branch, or you tick the\nrebase/retry checkbox.\n\n🔕 **Ignore**: Close this PR and you won't be reminded about these\nupdates again.\n\n---\n\n- [ ] <!-- rebase-check -->If you want to rebase/retry this PR, check\nthis box\n\n---\n\nThis PR was generated by [Mend Renovate](https://mend.io/renovate/).\nView the [repository job\nlog](https://developer.mend.io/github/textlint/textlint).\n\n<!--renovate-debug:eyJjcmVhdGVkSW5WZXIiOiI0My44LjUiLCJ1cGRhdGVkSW5WZXIiOiI0My44LjUiLCJ0YXJnZXRCcmFuY2giOiJtYXN0ZXIiLCJsYWJlbHMiOlsiZGVwZW5kZW5jaWVzIl19-->\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "timestamp": "2026-02-13T00:54:04Z",
+          "tree_id": "3110ed01d81371a45c5998029467b211e8cbe5e6",
+          "url": "https://github.com/thompson-tomo/textlint/commit/a0e6e8b815bb4f0ea4f3a123b0552705eb263da3"
+        },
+        "date": 1770954844999,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "npm run bench:self",
+            "value": 0.24811969841999998,
+            "range": "± 0.22745080199999998",
+            "unit": "seconds"
+          },
+          {
+            "name": "npm run bench:technical-writing",
+            "value": 1.82245520182,
+            "range": "± 0.02786246400000003",
+            "unit": "seconds"
+          },
+          {
+            "name": "npm run bench:jtf-style",
+            "value": 0.68234451342,
+            "range": "± 0.01433393500000002",
             "unit": "seconds"
           }
         ]
