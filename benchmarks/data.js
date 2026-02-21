@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1771628942675,
+  "lastUpdate": 1771652613901,
   "repoUrl": "https://github.com/thompson-tomo/textlint",
   "entries": {
     "Benchmark": [
@@ -95927,6 +95927,48 @@ window.BENCHMARK_DATA = {
             "name": "npm run bench:jtf-style",
             "value": 0.6895226250600001,
             "range": "± 0.013709803999999992",
+            "unit": "seconds"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "198982749+Copilot@users.noreply.github.com",
+            "name": "Copilot",
+            "username": "Copilot"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "59369f8c1380f64ac88784571be04099bb8af470",
+          "message": "Upgrade glob to v11 to fix minimatch ReDoS vulnerability (#1936)\n\nglob v10 depends on minimatch v9, which has a ReDoS vulnerability\n(CVE-2026-26996, GHSA-3ppc-4f35-3m26). Patterns with many consecutive\nasterisks followed by non-matching literals cause exponential\nbacktracking.\n\n## Changes\n\n- **Upgrade glob**: `^10.5.0` → `^11.1.0` in\n`packages/textlint/package.json`\n  - Pulls in minimatch v10.2.1 (patched version)\n- **Remove @types/glob**: glob v11 ships with built-in TypeScript\ndefinitions\n\n<!-- START COPILOT ORIGINAL PROMPT -->\n\n\n\n<details>\n\n<summary>Original prompt</summary>\n\n> \n> ----\n> \n> *This section details on the original issue you should resolve*\n> \n> <issue_title>Vulnerable Dependency: glob (due to\nminimatch)</issue_title>\n> <issue_description>Howdy, thanks for supporting/maintaining textlint!\n> \n> glob v10 depends on a minimatch version that has a CVE:\nhttps://github.com/advisories/GHSA-3ppc-4f35-3m26\n> \n> It looks like glob v11 uses a newer version of minimatch that is not\naffected, and still supports back to node 20 which would align with the\ncurrent supported version specified in textlint.</issue_description>\n> \n> <agent_instructions>fix glob dependencies and check\naudit</agent_instructions>\n> \n> ## Comments on the Issue (you are @copilot in this section)\n> \n> <comments>\n> </comments>\n> \n\n\n</details>\n\n\n\n<!-- START COPILOT CODING AGENT SUFFIX -->\n\n- Fixes textlint/textlint#1934\n\n<!-- START COPILOT CODING AGENT TIPS -->\n---\n\n🔒 GitHub Advanced Security automatically protects Copilot coding agent\npull requests. You can protect all pull requests by enabling Advanced\nSecurity for your repositories. [Learn more about Advanced\nSecurity.](https://gh.io/cca-advanced-security)\n\n---------\n\nCo-authored-by: copilot-swe-agent[bot] <198982749+Copilot@users.noreply.github.com>\nCo-authored-by: azu <19714+azu@users.noreply.github.com>\nCo-authored-by: azu <azu@users.noreply.github.com>\nCo-authored-by: Copilot <175728472+Copilot@users.noreply.github.com>",
+          "timestamp": "2026-02-21T02:17:14Z",
+          "tree_id": "2c4e537cd64eb868bc51669a7eff49d27a2d3825",
+          "url": "https://github.com/thompson-tomo/textlint/commit/59369f8c1380f64ac88784571be04099bb8af470"
+        },
+        "date": 1771652605848,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "npm run bench:self",
+            "value": 0.24920724124000002,
+            "range": "± 0.243676212",
+            "unit": "seconds"
+          },
+          {
+            "name": "npm run bench:technical-writing",
+            "value": 1.8172545966400002,
+            "range": "± 0.019055000000000044",
+            "unit": "seconds"
+          },
+          {
+            "name": "npm run bench:jtf-style",
+            "value": 0.6710876888399999,
+            "range": "± 0.018127921000000047",
             "unit": "seconds"
           }
         ]
