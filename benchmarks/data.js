@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1771667644111,
+  "lastUpdate": 1771840437848,
   "repoUrl": "https://github.com/thompson-tomo/textlint",
   "entries": {
     "Benchmark": [
@@ -96011,6 +96011,48 @@ window.BENCHMARK_DATA = {
             "name": "npm run bench:jtf-style",
             "value": 0.67752677252,
             "range": "± 0.023225205999999998",
+            "unit": "seconds"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "6933af0cb4bdb0faa6bb424902029e60f18830a1",
+          "message": "chore(deps): update pnpm to v10.30.1 (#1938)\n\nThis PR contains the following updates:\n\n| Package | Change |\n[Age](https://docs.renovatebot.com/merge-confidence/) |\n[Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [pnpm](https://pnpm.io)\n([source](https://redirect.github.com/pnpm/pnpm/tree/HEAD/pnpm)) |\n[`10.30.0+sha512.2b5753de015d480eeb88f5b5b61e0051f05b4301808a82ec8b840c9d2adf7748eb352c83f5c1593ca703ff1017295bc3fdd3119abb9686efc96b9fcb18200937`\n→ `10.30.1`](https://renovatebot.com/diffs/npm/pnpm/10.30.0/10.30.1) |\n![age](https://developer.mend.io/api/mc/badges/age/npm/pnpm/10.30.1?slim=true)\n|\n![confidence](https://developer.mend.io/api/mc/badges/confidence/npm/pnpm/10.30.0/10.30.1?slim=true)\n|\n\n---\n\n### Release Notes\n\n<details>\n<summary>pnpm/pnpm (pnpm)</summary>\n\n###\n[`v10.30.1`](https://redirect.github.com/pnpm/pnpm/releases/tag/v10.30.1):\npnpm 10.30.1\n\n[Compare\nSource](https://redirect.github.com/pnpm/pnpm/compare/v10.30.0...v10.30.1)\n\n#### Patch Changes\n\n- Use the `/-/npm/v1/security/audits/quick` endpoint as the primary\naudit endpoint, falling back to `/-/npm/v1/security/audits` when it\nfails\n[#&#8203;10649](https://redirect.github.com/pnpm/pnpm/issues/10649).\n\n#### Platinum Sponsors\n\n<table>\n  <tbody>\n    <tr>\n      <td align=\"center\" valign=\"middle\">\n<a href=\"https://bit.dev/?utm_source=pnpm&utm_medium=release_notes\"\ntarget=\"_blank\"><img src=\"https://pnpm.io/img/users/bit.svg\" width=\"80\"\nalt=\"Bit\"></a>\n      </td>\n    </tr>\n  </tbody>\n</table>\n\n#### Gold Sponsors\n\n<table>\n  <tbody>\n    <tr>\n      <td align=\"center\" valign=\"middle\">\n<a href=\"https://sanity.io/?utm_source=pnpm&utm_medium=release_notes\"\ntarget=\"_blank\">\n          <picture>\n<source media=\"(prefers-color-scheme: light)\"\nsrcset=\"https://pnpm.io/img/users/sanity.svg\" />\n<source media=\"(prefers-color-scheme: dark)\"\nsrcset=\"https://pnpm.io/img/users/sanity_light.svg\" />\n<img src=\"https://pnpm.io/img/users/sanity.svg\" width=\"120\" alt=\"Sanity\"\n/>\n          </picture>\n        </a>\n      </td>\n      <td align=\"center\" valign=\"middle\">\n<a href=\"https://discord.com/?utm_source=pnpm&utm_medium=release_notes\"\ntarget=\"_blank\">\n          <picture>\n<source media=\"(prefers-color-scheme: light)\"\nsrcset=\"https://pnpm.io/img/users/discord.svg\" />\n<source media=\"(prefers-color-scheme: dark)\"\nsrcset=\"https://pnpm.io/img/users/discord_light.svg\" />\n<img src=\"https://pnpm.io/img/users/discord.svg\" width=\"220\"\nalt=\"Discord\" />\n          </picture>\n        </a>\n      </td>\n      <td align=\"center\" valign=\"middle\">\n<a href=\"https://vite.dev/?utm_source=pnpm&utm_medium=release_notes\"\ntarget=\"_blank\">\n<img src=\"https://pnpm.io/img/users/vitejs.svg\" width=\"42\" alt=\"Vite\">\n        </a>\n      </td>\n    </tr>\n    <tr>\n      <td align=\"center\" valign=\"middle\">\n<a href=\"https://serpapi.com/?utm_source=pnpm&utm_medium=release_notes\"\ntarget=\"_blank\">\n          <picture>\n<source media=\"(prefers-color-scheme: light)\"\nsrcset=\"https://pnpm.io/img/users/serpapi_dark.svg\" />\n<source media=\"(prefers-color-scheme: dark)\"\nsrcset=\"https://pnpm.io/img/users/serpapi_light.svg\" />\n<img src=\"https://pnpm.io/img/users/serpapi_dark.svg\" width=\"160\"\nalt=\"SerpApi\" />\n          </picture>\n        </a>\n      </td>\n      <td align=\"center\" valign=\"middle\">\n<a\nhref=\"https://coderabbit.ai/?utm_source=pnpm&utm_medium=release_notes\"\ntarget=\"_blank\">\n          <picture>\n<source media=\"(prefers-color-scheme: light)\"\nsrcset=\"https://pnpm.io/img/users/coderabbit.svg\" />\n<source media=\"(prefers-color-scheme: dark)\"\nsrcset=\"https://pnpm.io/img/users/coderabbit_light.svg\" />\n<img src=\"https://pnpm.io/img/users/coderabbit.svg\" width=\"220\"\nalt=\"CodeRabbit\" />\n          </picture>\n        </a>\n      </td>\n      <td align=\"center\" valign=\"middle\">\n<a href=\"https://workleap.com/?utm_source=pnpm&utm_medium=release_notes\"\ntarget=\"_blank\">\n          <picture>\n<source media=\"(prefers-color-scheme: light)\"\nsrcset=\"https://pnpm.io/img/users/workleap.svg\" />\n<source media=\"(prefers-color-scheme: dark)\"\nsrcset=\"https://pnpm.io/img/users/workleap_light.svg\" />\n<img src=\"https://pnpm.io/img/users/workleap.svg\" width=\"190\"\nalt=\"Workleap\" />\n          </picture>\n        </a>\n      </td>\n    </tr>\n    <tr>\n      <td align=\"center\" valign=\"middle\">\n<a\nhref=\"https://stackblitz.com/?utm_source=pnpm&utm_medium=release_notes\"\ntarget=\"_blank\">\n          <picture>\n<source media=\"(prefers-color-scheme: light)\"\nsrcset=\"https://pnpm.io/img/users/stackblitz.svg\" />\n<source media=\"(prefers-color-scheme: dark)\"\nsrcset=\"https://pnpm.io/img/users/stackblitz_light.svg\" />\n<img src=\"https://pnpm.io/img/users/stackblitz.svg\" width=\"190\"\nalt=\"Stackblitz\" />\n          </picture>\n        </a>\n      </td>\n      <td align=\"center\" valign=\"middle\">\n<a href=\"https://nx.dev/?utm_source=pnpm&utm_medium=release_notes\"\ntarget=\"_blank\">\n          <picture>\n<source media=\"(prefers-color-scheme: light)\"\nsrcset=\"https://pnpm.io/img/users/nx.svg\" />\n<source media=\"(prefers-color-scheme: dark)\"\nsrcset=\"https://pnpm.io/img/users/nx_light.svg\" />\n<img src=\"https://pnpm.io/img/users/nx.svg\" width=\"50\" alt=\"Nx\" />\n          </picture>\n        </a>\n      </td>\n    </tr>\n  </tbody>\n</table>\n\n</details>\n\n---\n\n### Configuration\n\n📅 **Schedule**: Branch creation - At any time (no schedule defined),\nAutomerge - At any time (no schedule defined).\n\n🚦 **Automerge**: Enabled.\n\n♻ **Rebasing**: Whenever PR is behind base branch, or you tick the\nrebase/retry checkbox.\n\n🔕 **Ignore**: Close this PR and you won't be reminded about this update\nagain.\n\n---\n\n- [ ] <!-- rebase-check -->If you want to rebase/retry this PR, check\nthis box\n\n---\n\nThis PR was generated by [Mend Renovate](https://mend.io/renovate/).\nView the [repository job\nlog](https://developer.mend.io/github/textlint/textlint).\n\n<!--renovate-debug:eyJjcmVhdGVkSW5WZXIiOiI0My4yNi41IiwidXBkYXRlZEluVmVyIjoiNDMuMjYuNSIsInRhcmdldEJyYW5jaCI6Im1hc3RlciIsImxhYmVscyI6WyJkZXBlbmRlbmNpZXMiXX0=-->\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "timestamp": "2026-02-23T05:26:31Z",
+          "tree_id": "7abe75fd6e9cfe532fd696782c1b67f823db4996",
+          "url": "https://github.com/thompson-tomo/textlint/commit/6933af0cb4bdb0faa6bb424902029e60f18830a1"
+        },
+        "date": 1771840428929,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "npm run bench:self",
+            "value": 0.21718926623999998,
+            "range": "± 0.048726676999999996",
+            "unit": "seconds"
+          },
+          {
+            "name": "npm run bench:technical-writing",
+            "value": 1.81344050744,
+            "range": "± 0.006959643000000071",
+            "unit": "seconds"
+          },
+          {
+            "name": "npm run bench:jtf-style",
+            "value": 0.6766746250400001,
+            "range": "± 0.03298671200000003",
             "unit": "seconds"
           }
         ]
