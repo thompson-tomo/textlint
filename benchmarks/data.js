@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1785080409922,
+  "lastUpdate": 1785080881577,
   "repoUrl": "https://github.com/thompson-tomo/textlint",
   "entries": {
     "Benchmark": [
@@ -100799,6 +100799,48 @@ window.BENCHMARK_DATA = {
             "name": "npm run bench:jtf-style",
             "value": 0.6024997631000001,
             "range": "± 0.017021547000000026",
+            "unit": "seconds"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "thompson.tomo@outlook.com",
+            "name": "James Thompson",
+            "username": "thompson-tomo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c6b1e28274655063b6f06a7c12e006b7687716a2",
+          "message": "Update github.test.ts\n\nCo-authored-by: devin-ai-integration[bot] <158243242+devin-ai-integration[bot]@users.noreply.github.com>",
+          "timestamp": "2026-07-27T01:46:23+10:00",
+          "tree_id": "19236f0bcc46b5334f98973f9bd062291bc9e6c0",
+          "url": "https://github.com/thompson-tomo/textlint/commit/c6b1e28274655063b6f06a7c12e006b7687716a2"
+        },
+        "date": 1785080870477,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "npm run bench:self",
+            "value": 0.23361441028000002,
+            "range": "± 0.22043292900000003",
+            "unit": "seconds"
+          },
+          {
+            "name": "npm run bench:technical-writing",
+            "value": 1.7114153980800002,
+            "range": "± 0.03788685999999997",
+            "unit": "seconds"
+          },
+          {
+            "name": "npm run bench:jtf-style",
+            "value": 0.59283467788,
+            "range": "± 0.019009613000000036",
             "unit": "seconds"
           }
         ]
