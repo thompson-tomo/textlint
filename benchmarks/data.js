@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1786528525835,
+  "lastUpdate": 1787276959171,
   "repoUrl": "https://github.com/thompson-tomo/textlint",
   "entries": {
     "Benchmark": [
@@ -101555,6 +101555,48 @@ window.BENCHMARK_DATA = {
             "name": "npm run bench:jtf-style",
             "value": 0.68912122476,
             "range": "± 0.029934403000000054",
+            "unit": "seconds"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "46734354+tatsuya-asami@users.noreply.github.com",
+            "name": "tatsuya.asami",
+            "username": "tatsuya-asami"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ca7d1109313bf2bc110647d09ae1de03f650e39a",
+          "message": "feat(textlint): add --cache-strategy option (#2096)\n\nAdd `--cache-strategy` CLI option to control how textlint detects\nchanged files when using `--cache`.\n\n~~- `content` (default): use file content hash — accurate and CI-safe~~\n(corrected: default is `metadata`, see below)\n\n- `metadata` (default): use file mtime and size — fast but not reliable\nin CI\n- `content`: use file content hash — accurate and CI-safe\n\nPreviously the cache was hardcoded to metadata-based detection via\n`file-entry-cache(useCheckSum=false)`.\nThe default stays `metadata` to keep backward compatibility for existing\n`--cache` users; switching the default to `content` would be a breaking\nchange, so it is deferred to a major version.\n\nReference:\n- [Prettier CLI\n--cache-strategy](https://prettier.io/docs/en/cli#--cache-strategy)\n- [ESLint\n--cache-strategy](https://eslint.org/docs/latest/use/command-line-interface#--cache-strategy)\n\nRefs #1327",
+          "timestamp": "2026-08-21T06:28:14+09:00",
+          "tree_id": "0a1c1f4d00285de226359f65dbcbe7a8ec2f20f0",
+          "url": "https://github.com/thompson-tomo/textlint/commit/ca7d1109313bf2bc110647d09ae1de03f650e39a"
+        },
+        "date": 1787276949793,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "npm run bench:self",
+            "value": 0.21393748438000001,
+            "range": "± 0.03302466100000001",
+            "unit": "seconds"
+          },
+          {
+            "name": "npm run bench:technical-writing",
+            "value": 1.8125964659799998,
+            "range": "± 0.02342892799999996",
+            "unit": "seconds"
+          },
+          {
+            "name": "npm run bench:jtf-style",
+            "value": 0.70548453738,
+            "range": "± 0.012196420999999957",
             "unit": "seconds"
           }
         ]
